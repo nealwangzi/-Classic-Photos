@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		0850E7381F5976AE0076B71C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0850E7371F5976AE0076B71C /* AppDelegate.swift */; };
-		0850E73A1F5976AE0076B71C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0850E7391F5976AE0076B71C /* ViewController.swift */; };
 		0850E73D1F5976AE0076B71C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0850E73B1F5976AE0076B71C /* Main.storyboard */; };
 		0850E73F1F5976AE0076B71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0850E73E1F5976AE0076B71C /* Assets.xcassets */; };
 		0850E7421F5976AE0076B71C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0850E7401F5976AE0076B71C /* LaunchScreen.storyboard */; };
+		0850E74A1F59770A0076B71C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0850E7491F59770A0076B71C /* ListViewController.swift */; };
+		0850E74D1F59772C0076B71C /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0850E74C1F59772C0076B71C /* CoreImage.framework */; };
+		0850E74F1F59774F0076B71C /* PhotoOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0850E74E1F59774F0076B71C /* PhotoOperations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0850E7341F5976AE0076B71C /* ClassicPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassicPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0850E7371F5976AE0076B71C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0850E7391F5976AE0076B71C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0850E73C1F5976AE0076B71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0850E73E1F5976AE0076B71C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0850E7411F5976AE0076B71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0850E7431F5976AE0076B71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0850E7491F59770A0076B71C /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		0850E74C1F59772C0076B71C /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		0850E74E1F59774F0076B71C /* PhotoOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoOperations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0850E74D1F59772C0076B71C /* CoreImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				0850E7361F5976AE0076B71C /* ClassicPhotos */,
 				0850E7351F5976AE0076B71C /* Products */,
+				0850E74B1F59772C0076B71C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +61,22 @@
 			isa = PBXGroup;
 			children = (
 				0850E7371F5976AE0076B71C /* AppDelegate.swift */,
-				0850E7391F5976AE0076B71C /* ViewController.swift */,
 				0850E73B1F5976AE0076B71C /* Main.storyboard */,
 				0850E73E1F5976AE0076B71C /* Assets.xcassets */,
 				0850E7401F5976AE0076B71C /* LaunchScreen.storyboard */,
 				0850E7431F5976AE0076B71C /* Info.plist */,
+				0850E7491F59770A0076B71C /* ListViewController.swift */,
+				0850E74E1F59774F0076B71C /* PhotoOperations.swift */,
 			);
 			path = ClassicPhotos;
+			sourceTree = "<group>";
+		};
+		0850E74B1F59772C0076B71C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0850E74C1F59772C0076B71C /* CoreImage.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0850E73A1F5976AE0076B71C /* ViewController.swift in Sources */,
+				0850E74A1F59770A0076B71C /* ListViewController.swift in Sources */,
 				0850E7381F5976AE0076B71C /* AppDelegate.swift in Sources */,
+				0850E74F1F59774F0076B71C /* PhotoOperations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
